@@ -1,0 +1,275 @@
+
+html {
+    font-family: "Roboto", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section {
+    width: 1200px;
+    margin: 0 auto 50px auto;
+}
+.main {
+    background-color: #F5F9FA;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-lists {
+    display: flex;
+    gap: 10px;
+
+}
+a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #111;
+
+
+}
+.nav-lists a {
+    color: #4678F3;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+}
+.logo {
+    width: 100%;
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+p {
+    font-size: 15px;
+    color: #85888D;
+    margin-bottom: 10px;
+}
+.buy-button {
+    border: none;
+    padding: 10px ;
+    border-radius: 5px;
+    background-color: #4678F3;
+    color: #D1E1F7;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.content {
+    max-width: 500px;
+}
+.main-content {
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.features {
+    text-align: center;
+}
+.feature-button {
+    border: none;
+    padding: 10px;
+    color: #4678F3;
+    background-color: #D1E1F7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+h2 {
+    font-size: 35px;
+}
+.line {
+    display: flex;
+    width: 60px;
+    margin: 20px auto 0 auto;
+
+}
+.outer-line {
+    width: 20px;
+    height: 4px;
+    background-color: #4678F3;
+    margin: 0 10px;
+    border-radius: 2px;
+}
+.inner-line {
+    width: 40px;
+    height: 4px;
+    background-color: #4678F3;
+    border-radius: 2px;
+
+}
+.icon {
+    height: 100px;
+    width: 100px;
+    background-color: #4678F3;
+    border: 5px solid #D1E1F7;
+    transform: rotate(45deg);
+    
+    border-radius: 3px;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.single-feature {
+    width: 250px;
+    text-align: center;
+}
+.feature-content {
+    margin-top: 30px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+.single-fea-content p {
+    font-size: 15px;
+    line-height: 18px;
+}
+.icon-item {
+    font-size: 30px;
+    color: white;
+    transform: rotate(-45deg);
+   
+}
+.product-section {
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.product-details {
+    width: 45%;
+}
+.product-details .line {
+    margin: 0;
+}
+.product-details h3 {
+    margin: 15px 0;
+    font-size: 35px;
+}
+.product-details > p {
+    margin-top: 17px;
+    line-height: 20px;
+}
+.product-details ul {
+    list-style: none;
+    color: #6E6E6E;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: bold;
+}
+ul li:before {
+    content: '✔';
+  }
+.footer {
+    padding: 70px 0 30px 0;
+    background-color: #182535;
+    
+    
+
+}
+
+
+.footer section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer-content {
+    max-width: 75%;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+
+}  
+
+#i-con {
+    transform: rotate(0deg);
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    color: white;
+}
+#i-con i {
+    font-size: 25px;
+}
+.footer-content h3 {
+    font-size: 25px;
+}
+.footer-content p {
+    margin: 15px 0;
+    line-height: 20px;
+}
+
+@media (max-width:700px) {
+    section {
+        width: 100%;
+        padding: 0 25px;
+    }
+    .nav-lists {
+        display: none;
+    }
+    .main-content {
+        flex-direction: column;
+        padding: 60px 10px 40px 10px;
+
+    }
+    .main-content .content {
+        text-align: center;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 30px;
+    }
+    h3, .footer-content h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 13px;
+        line-height: 1.3rem;
+    }
+    button, .feature-button {
+        font-size: 12px;
+        padding: 7px 8px;
+    }
+    
+    .feature-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon, #i-con {
+        width: 60px;
+        height: 60px;
+    }
+    .icon i, #i-con i {
+        font-size: 20px;
+    }
+    .product-section {
+        flex-direction: column;
+    }
+    .product-details {
+        width: 100%;
+    }
+    .product-details h3 {
+        font-size: 25px;
+    }
+}
